@@ -9,15 +9,37 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;800;900&family=Raleway:wght@100;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
-
+    <link rel="stylesheet" href="js/apollo.js">
+    <link rel="stylesheet" href="/css/jquery.flipster.min.css">
+    <link rel="stylesheet" href="/js/jquery.jcarousel.min.js">
+    <link rel="stylesheet" href="/css/flickity.min.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="/js/jquery.flipster.min.js"></script>
+    <script src="/js/apollo.js"></script>
+    <script src="https://npmcdn.com/flickity@1.2/dist/flickity.pkgd.min.js"></script>
 </head>
 <body>
     <header>
         <div class="wrapper">
             <div class="wrapper-navigation">
                 <p class="navigation-menu" >MENU</p>
-                <a class="navigation-menu-list fa fa-bars" aria-hidden="true"></a>
-            </div>
+                <nav>
+                    <div class="burger-nav">    
+                    </div>
+                    <div class="navigation-menu-list" id="contain">
+                      <div class="bar1"></div>
+                      <div class="bar2"></div>
+                      <div class="bar3"></div>
+                    </div>
+                    <ul id="nav" >
+                      <li><a href="">About</a></li>
+                      <li><a href="">Me Photos</a></li>
+                      <li><a href="">Story</a></li>
+                      <li><a href="">My Photos</a></li>
+                      <li><a href="">Say Hello</a></li>
+                    </ul>
+                  </nav>
+                </div>
             <div class="wrapper-context">
                 <div class="header-name">
                     <span class="header-name1">Apollo</span><span class="header-name2">PSD Template</span>
@@ -63,6 +85,18 @@
 
         <section>
             <div class="wrapper-photo">
+                <div class="carousel js-flickity" data-flickity-options='{ "imagesLoaded":"true", "autoPlay": "true", "watchCSS":"true" }'
+		 >
+  <div class="carousel-cell">
+			<img class="carousel-cell-ph1" src="/img/Portfolio Showcase 1.png">
+	</div>
+  <div class="carousel-cell">
+			<img class="carousel-cell-ph2" src="/img/Photo 1.png">
+	</div>
+	<div class="carousel-cell">
+			<img class="carousel-cell-ph3" src="/img/Photo 2.png">
+	</div>
+</div>
 
             </div>
         </section>
@@ -81,11 +115,21 @@
         </section>
 
         <section>
-            <div class="wrapper-four">
-                <div class="wrapper-four-slider">
-
-                </div>
-            </div>
+            <div class="wrapper-slider-flipper">
+                <div id="carousel">
+                <ul class="flip-items">
+                    <li>
+                        <img src="img/Photo 1.png">
+                    </li>
+                    <li>
+                        <img src="img/Photo 2.png">
+                     </li>
+                    <li>
+                        <img src="img/Photo 3.png">
+                    </li>
+                </ul>
+        </div></div>
+            
         </section>
     </header>
 
