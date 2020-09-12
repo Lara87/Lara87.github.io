@@ -22,6 +22,7 @@ body{
 .wrapper-navigation {
   display: inline-flex;
   justify-content:flex-end;
+  margin: 35px 0 0 0;
 }
 
 .navigation-menu{
@@ -29,15 +30,12 @@ body{
   color: #000000;
   font-size: 18px;
   font-weight: 100;
-  text-align: left;
-  padding: 32px 11px 0 0;
+  margin: 9px 0 0 0;
 }
 
 .navigation-menu-list{
   width: 20px;
   height: 15px;
-  padding: 35px 79px 0px 9px;
-  font-size: 22px;
 }
 
 .header-name{
@@ -163,9 +161,26 @@ font-weight: 700;
 .wrapper-photo{
   width: 1500px;
   height: 750px;
-  background-image: url(../img/Portfolio\ Showcase\ 1.png);
-  background-repeat: no-repeat;
-  margin: 50px 0 0 0;
+  margin-top: 50px; 
+}
+
+.flickity-viewport{
+  height: 750px !important;
+}
+
+.carousel-cell-ph1{
+  width: 529.5px;
+  height: 359.2px;
+}
+
+.carousel-cell-ph2{
+  width: 673.5px;
+  height: 449px;
+}
+
+.carousel-cell-ph3{
+  width: 538.3px;
+  height: 359.2px;
 }
 
 .wrapper-three{
@@ -178,16 +193,16 @@ font-weight: 700;
 }
 
 .wrapper-three-name{
-    position: absolute;
-    left: 180px;
-    font-size: 50px;
-    text-align: left;
-    color: #000000;
-    padding: 193px 0 0 0;
+  position: absolute;
+  left: 180px;
+  font-size: 50px;
+  text-align: left;
+  color: #000000;
+  padding: 193px 0 0 0;
 }
 
 .name-start{
-font-weight: 700;
+  font-weight: 700;
 }
 
 .name-end{
@@ -328,4 +343,132 @@ input{
   display: flex;
   margin-left: 458px;
   justify-content: center;
+}
+
+.wrapper-slider-flipper{
+  width: 1500px;
+  background-image: url(../img/Portfolio\ Showcase\ 3.png);
+  background-repeat: no-repeat;
+  height: 750px;
+  margin: 50px 0 0 0;
+}
+
+#carousel{
+  padding-top: 102px;
+  overflow-y: hidden;
+}
+
+li>img{
+  width: 674px;
+  height: 449px;
+}
+
+.carousel-cell {
+	width: 100%;
+}
+
+.carousel-cell img {
+	width: 100%;
+	height: auto;
+}
+
+
+.carousel:after {
+  content: 'flickity';
+  display: none;
+}
+
+
+.burger-icon {
+  position: relative;
+  right: 1%;
+  cursor: pointer;
+  top: 3px;
+}
+
+header .wrapper {
+  padding: 0;
+  margin: 0;
+}
+
+#nav {
+  overflow: hidden;
+  background: #505050;
+  height: 0;
+  max-height: 0px;
+  list-style-type: none;
+  padding-top: 0;
+  margin-top: 15px;
+  margin-left: 15px;
+  -webkit-transition: linear 1s;
+  transition: linear 1s;
+}
+
+#nav.open {
+  height: auto;
+ max-height: 500px; 
+  -webkit-transition: linear 1s;
+  transition: linear 1s;
+
+}
+
+#nav li {
+  float: none;
+  text-align: left;
+  text-decoration: none;
+  width: 100%; 
+  margin: 0;
+  -webkit-transition: linear 1s;
+  transition: linear 1s;
+}
+
+#nav li a {
+text-decoration: none;
+  color: white;
+  padding: 10px;
+  border-bottom: 1px solid white;
+  display: block;
+  margin: 0;
+  -webkit-transition: linear 1s;
+  transition: linear 1s;
+}
+
+#contain {
+  display: inline-block;
+  cursor: pointer;
+  margin: 0 0 0 13px;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.2s;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+  transform: rotate(-45deg) translate(-9px, 6px) ;
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+  transform: rotate(45deg) translate(-8px, -8px) ;
+}
+
+.hover .bar1 {
+  background-color: red;
+}
+
+.hover .bar2 {
+  background-color: red;
+}
+
+.hover .bar3 {
+  background-color: red;
 }
