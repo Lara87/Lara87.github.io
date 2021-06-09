@@ -40,6 +40,7 @@
 
 body {
   max-width: 1920px;
+  width: 100%;
 }
 
 body .lock {
@@ -53,14 +54,9 @@ body .lock {
   background: linear-gradient(90deg, #2d1686 0%, #4e33b5 100%);
 }
 
-@media (max-width: 576px) {
-  .page {
-    padding-top: 15px;
-  }
-}
-
 .wrapper {
   max-width: 1170px;
+  width: 100%;
   margin: 0 auto;
   padding-bottom: 103px;
 }
@@ -84,6 +80,12 @@ body .lock {
 @media (max-width: 1200px) {
   .header {
     padding: 33px;
+  }
+}
+
+@media (max-width: 576px) {
+  .header {
+    padding: 15px;
   }
 }
 
@@ -299,29 +301,19 @@ nav {
 }
 
 .catalog__title {
-  padding-top: 130px;
-  padding-bottom: 50px;
+  padding: 80px 130px 50px 130px;
 }
 
 @media (max-width: 576px) {
   .catalog__title {
-    padding: 20px 10px;
+    padding: 15px 15px 15px 15px;
   }
 }
 
 @media (max-width: 768px) {
   .catalog__title {
-    padding-top: 50px;
+    padding: 50px 15px 0 15px;
     margin: 0 auto;
-    padding-right: 15px;
-    padding-left: 15px;
-  }
-}
-
-@media (max-width: 1200px) {
-  .catalog__title {
-    margin: 0 auto;
-    padding: 80px 130px 50px;
   }
 }
 
@@ -336,7 +328,6 @@ nav {
 
 @media (max-width: 576px) {
   .catalog__title .title-h1 {
-    padding: 0 10px;
     font-size: 38px;
   }
 }
@@ -476,6 +467,7 @@ nav {
 @media (max-width: 576px) {
   .registration__item {
     width: 400px;
+    height: 230px;
     margin: 0 auto;
   }
 }
@@ -483,28 +475,14 @@ nav {
 @media (max-width: 768px) {
   .registration__item img {
     visibility: hidden;
+    width: 100%;
   }
 }
 
 @media (max-width: 576px) {
   .registration__item img {
     visibility: hidden;
-  }
-}
-
-.title-registration {
-  font-family: "Whitney";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 34px;
-  line-height: 45px;
-  color: #ffffff;
-  text-align: initial;
-}
-
-@media (max-width: 576px) {
-  .title-registration {
-    font-size: 30px;
+    width: 100%;
   }
 }
 
@@ -522,6 +500,34 @@ nav {
   }
 }
 
+@media (max-width: 768px) {
+  .registration__item-description {
+    top: 0px;
+  }
+}
+
+.registration__item-description .title-registration {
+  font-family: "Whitney";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 34px;
+  line-height: 45px;
+  color: #ffffff;
+  text-align: initial;
+}
+
+@media (max-width: 576px) {
+  .registration__item-description .title-registration {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .registration__item-description .title-registration {
+    font-size: 20px;
+  }
+}
+
 .registration__item-btn {
   position: absolute;
   bottom: 70px;
@@ -530,8 +536,14 @@ nav {
 
 @media (max-width: 576px) {
   .registration__item-btn {
-    bottom: 42px;
+    bottom: 30px;
     left: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .registration__item-btn {
+    bottom: 35px;
   }
 }
 
