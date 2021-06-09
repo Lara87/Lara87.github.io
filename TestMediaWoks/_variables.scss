@@ -1,0 +1,78 @@
+@font-face {
+    font-family: "Whitney";
+    src: url("../fonts/Whitney-Semibold.eot");
+    src: local("Whitney Semibold Regular"), local("Whitney-Semibold"),
+        url("../fonts/Whitney-Semibold.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/Whitney-Semibold.woff") format("woff"), url("../fonts/Whitney-Semibold.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Whitney";
+    src: url("../fonts/Whitney-Light.eot");
+    src: local("Whitney Light Regular"), local("Whitney-Light"),
+        url("Whitney-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Whitney-Light.woff") format("woff"),
+        url("../fonts/Whitney-Light.ttf") format("truetype");
+    font-weight: 325;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Whitney";
+    src: url("../fonts/Whitney-Light.eot");
+    src: local("Whitney Light Regular"), local("Whitney-Light"),
+        url("../fonts/Whitney-Light.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/Whitney-Light.woff") format("woff"), url("../fonts/Whitney-Light.ttf") format("truetype");
+    font-weight: 350;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Segoe UI";
+    src: url("../fonts/SegoeUI-SemiBold.eot");
+    src: local("Segoe UI Semibold"), local("SegoeUI-SemiBold"),
+        url("../fonts/SegoeUI-SemiBold.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/SegoeUI-SemiBold.woff") format("woff"), url("../fonts/SegoeUI-SemiBold.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Segoe UI";
+    src: url("../fonts/SegoeUI-Light.eot");
+    src: local("Segoe UI Light"), local("SegoeUI-Light"),
+        url("../fonts/SegoeUI-Light.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/SegoeUI-Light.woff") format("woff"), url("../fonts/SegoeUI-Light.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+$orangeTone: #f25b24;
+$mainTone: #4e33b5;
+$main: #2d1686;
+$white: #ffffff;
+$orange: #e34208;
+$palite: #2e2d35;
+$text: #474351;
+$bacKCatalogItem: #f6f5f9;
+$backGradient: linear-gradient(90deg, $main 0%, $mainTone 100%);
+$secondary: #918d9a;
+
+@mixin breakpoint($point) {
+    @if $point == sm{ 
+        @media (max-width: 576px) {@content;}
+    }
+    @else if $point == md{
+        @media (max-width: 768px) {@content;}
+    }
+    @else if $point == lg{
+        @media (max-width: 992px) {@content;}
+    }
+    @else if $point == xl{
+        @media (max-width: 1200px) {@content;}
+    }
+    @else if $point == xxl{
+        @media (max-width: 1400px) {@content;}
+    }
+}
