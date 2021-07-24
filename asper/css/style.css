@@ -12,6 +12,7 @@
   grid-gap: 9px;
   margin: 0 auto;
   padding: 9px;
+  max-width:669px;
 }
 
 /*@media (max-width:2560px){
