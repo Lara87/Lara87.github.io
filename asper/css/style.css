@@ -14,7 +14,7 @@
   padding: 9px;
 }
 
-@media (max-width:2560px){
+/*@media (max-width:2560px){
   .grid-big{
   width: 699px;
   }
@@ -24,7 +24,7 @@
   .grid-big{
       grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
   }
-}
+}*/
 
 .grid-small {
   display: grid;
