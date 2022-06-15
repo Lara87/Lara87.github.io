@@ -1,0 +1,229 @@
+body {
+    margin: 0;
+    min-width: 1920px;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 53px;
+    line-height: 62px;
+    color: #ffffff;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    background: #c0dbd9;
+}
+
+.header-popup-btn {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    background: #7faff7;
+    padding: 30.5px 0 30.5px 30px;
+}
+
+.btn-popup {
+    background: #a5c7f9;
+    border-radius: 5px;
+    border: transparent;
+    padding: 8px 15px;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    color: #ffffff;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.content-popup {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 400px;
+    height: 400px;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 53px;
+    line-height: 62px;
+    color: #000000;
+}
+
+.btn-close {
+    display: flex;
+    position: absolute;
+    padding: 8px 15px;
+    border: transparent;
+    background: #7faff6;
+    border-radius: 5px;
+    cursor: pointer;
+    top: 15px;
+    right: 15px;
+}
+
+.popup {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+#area-popup:target {
+    display: block;
+}
+
+.main-header-popup {
+    padding-bottom: 15px;
+}
+
+.content-popup {
+    background-color: #ffffff;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    position: absolute;
+}
+.main-container {
+    padding-bottom: 100px;
+}
+.tiles-container-one {
+    display: flex;
+    flex-wrap: wrap;
+    background: #b3f95a;
+}
+
+.tiles-container-one .tile-item {
+    display: flex;
+    background: #8ad191;
+    height: 198px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+
+.tiles-container-two {
+    background: #88b5bf;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.tiles-container-two .tile-item {
+    background: #0d89b0;
+    display: flex;
+    width: 100%;
+    width: 255px;
+    margin: 0;
+    margin-right: 30px;
+    height: 0;
+    padding-bottom: 17.5%;
+}
+.top-container.container {
+    padding-bottom: 15px;
+}
+.bottom-container.container {
+    padding-bottom: 100px;
+}
+
+.tile-item.small,
+.tile-item.small-5 {
+    width: 160px;
+    margin-right: 0;
+    position: relative;
+}
+.tile-item.small-5:nth-last-child(1) {
+    margin-bottom: 0;
+}
+.tiles-container-one .tile-item {
+    flex-grow: 1;
+}
+.tile-item.big {
+    width: 995px;
+    margin-bottom: 0;
+    position: relative;
+    flex-grow: 2;
+}
+.tile-item.middle {
+    position: relative;
+    width: 590px;
+}
+
+.tile-item.middle:after {
+    content: "2";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tile-item.small:after {
+    content: "3";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.tile-item.small-5:after {
+    content: "5";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tile-item.big:after {
+    content: "4";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tile-item.first:after {
+    content: "1";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tile-item.first {
+    width: 390px;
+    position: relative;
+}
+.tiles-container-two .tile-item:nth-last-child(1) {
+    margin-right: 0px;
+}
+.footer-content {
+    background: #7faff7;
+    height: 100px;
+}
